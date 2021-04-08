@@ -1,8 +1,11 @@
 <mat-toolbar color="accent">
     <span>Smart Locker 🧰</span>
     <span class="spacer"></span>
-    <button mat-raised-button color="primary" class="header ">
+    <button *ngIf="!token" routerLink="/login" mat-raised-button color="primary" class="header">
         <span>Log In</span>
+    </button>
+    <button *ngIf="token" (click)="logOutAsync()" mat-raised-button color="primary" class="header">
+        <span>Log Out</span>
     </button>
 </mat-toolbar>
 
