@@ -1,0 +1,22 @@
+<form ngNativeValidate (submit)="loginAsync()">
+    <h2>Login</h2>
+  
+    <p *ngIf="error" style="color: #e43e32;margin-top: -25px;">{{error}}</p>
+  
+    <div class="user-box">
+      <input type="text" [(ngModel)]="login" required name="login" autocomplete="off">
+      <label>Login</label>
+    </div>
+    <div class="user-box">
+      <input type="password" [(ngModel)]="password" required name="password" autocomplete="off">
+      <label>Password</label>
+    </div>
+  
+    <button type="submit">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </button>
+  </form>
