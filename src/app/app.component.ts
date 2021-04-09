@@ -32,6 +32,6 @@ export class AppComponent implements OnInit {
 
   public async logOutAsync(): Promise<void> {
     this.userManagerService.removeToken();
-    await this.router.navigate(['/login']);
+    await this.router.navigate(['/**']);
   }
 }
