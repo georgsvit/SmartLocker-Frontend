@@ -1,5 +1,6 @@
 <mat-toolbar color="accent">
-    <a routerLink='/**' mat-button>Smart Locker 🧰</a>
+    <a *ngIf="!token" routerLink='/**' mat-button>Smart Locker 🧰</a>
+    <a *ngIf="token" routerLink='/home' mat-button>Smart Locker 🧰</a>
     <span class="spacer"></span>
     <button *ngIf="!token" routerLink="/login" mat-raised-button color="primary" class="header">
         <span>Log In</span>
