@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-title>Data Import</mat-card-title>
+    <mat-card-content>
+        Please upload the text file with exported data
+        <p *ngIf="file">Selected file: {{file.name}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <input #fileLoader type="file" accept="text/plain" hidden (change)="onFileSelect($event)"/>
+        <button mat-stroked-button color="primary" (click)="fileLoader.click()">Select File</button>
+        <button mat-stroked-button color="primary" [disabled]="file == null ? true : null" (click)="onLoadAsync()">Upload</button>
+    </mat-card-actions>
+</mat-card>
+<mat-card>
+    <mat-card-title>Data Export</mat-card-title>
+    <mat-card-content>Please click the button to download the exported data</mat-card-content>
+    <mat-card-actions>
+        <button mat-stroked-button color="primary" (click)="onExport()">Download</button>
+    </mat-card-actions>
+</mat-card>
+<mat-card>
+    <mat-card-title>DB Backup</mat-card-title>
+    <mat-card-content>Please click the button to download the database backup</mat-card-content>
+    <mat-card-actions>
+        <button mat-stroked-button color="primary" (click)="onBackup()">Download</button>
+    </mat-card-actions>
+</mat-card>
