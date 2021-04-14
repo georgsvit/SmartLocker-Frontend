@@ -1,0 +1,33 @@
+.grid-container {
+  margin: 20px;
+  height: fit-content;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  height: fit-content;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+.header-image {
+  background-image: url('https://cdn1.iconfinder.com/data/icons/sports-categories/100/locker-512.png');
+  background-size: cover;
+}
+
+.chips-container {
+  padding-bottom: 10px; 
+  padding-top: 10px;
+}
