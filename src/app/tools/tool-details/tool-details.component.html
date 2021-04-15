@@ -1,0 +1,51 @@
+<mat-card class="dashboard-card">
+    <mat-card-header>
+        <mat-card-title style="text-align: left; padding-top: 10px;">{{tool.name}}</mat-card-title>
+        <mat-card-subtitle>{{tool.id}}</mat-card-subtitle>
+
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+            <button *ngIf="tool.serviceState == 'SERVICE_REQUIRED'" mat-menu-item (click)="requestService()">Request Service</button>
+            <button mat-menu-item (click)="onEdit()">Edit</button>
+            <button mat-menu-item (click)="onDelete()">Delete</button>
+            <button mat-menu-item (click)="this.dialogRef.close()">Close</button>
+        </mat-menu>
+    </mat-card-header>
+  
+    <div style="width: inherit; height: 300px; background-image: url({{tool.imgUrl}}); background-size: cover;"></div>
+    <mat-card-content class="dashboard-card-content">
+        <div class="chips-container">
+            <mat-chip-list>
+                <mat-chip selected color="warn" *ngIf="isServiceNeeded(tool)">
+                    Service needed
+                </mat-chip>
+                <mat-chip selected color="primary" *ngIf="tool.userId != null">
+                    In use
+                </mat-chip>
+                <mat-chip selected color="primary" *ngIf="tool.lockerId != null">
+                    In locker
+                </mat-chip>
+            </mat-chip-list>
+        </div>
+
+        <ng-container>
+            <mat-expansion-panel >
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                    Details
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div style="text-align: left">
+                    <p><span class="details">Description:</span> {{tool.description}}</p>
+                    <p><span class="details">Access Level:</span> {{tool.accessLevel}}</p>
+                    <hr />
+                    <p><span class="details">Last service date:</span> {{tool.serviceBook.lastServiceDate}}</p>
+                    <p><span class="details">Service interval:</span> {{tool.serviceBook.msBetweenServices / 86400}} day(s)</p>
+                    <p><span class="details">Usages:</span> {{tool.serviceBook.usages}}/{{tool.serviceBook.maxUsages}}</p>
+                </div>
+            </mat-expansion-panel>
+        </ng-container>
+    </mat-card-content>
+</mat-card>

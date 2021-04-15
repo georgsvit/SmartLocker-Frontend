@@ -8,7 +8,7 @@ export interface LockerEditDialogData {
 @Component({
     selector: `locker-edit-dialog`,
     template: `
-        <h2 mat-dialog-title>Create new locker</h2>
+        <h2 mat-dialog-title>Enter locker data</h2>
         <div mat-dialog-content>
         <p *ngIf="error" style="color: #e43e32;">{{error}}</p>            
         <mat-form-field>

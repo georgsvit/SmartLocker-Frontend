@@ -36,6 +36,10 @@ import { LockersComponent } from './lockers/lockers.component';
 import { AuthInterceptor } from './services/interceptors/auth.interceptor';
 import { LockerEditDialog } from './lockers/locker-edit-dialog';
 import { DataManagementComponent } from './data-management/data-management.component';
+import { ToolsComponent } from './tools/tools.component';
+import { ToolDetailsComponent } from './tools/tool-details/tool-details.component';
+import { ToolEditDialogComponent } from './tools/tool-edit-dialog/tool-edit-dialog.component';
+
 
 @NgModule({
   declarations: [
@@ -45,7 +49,10 @@ import { DataManagementComponent } from './data-management/data-management.compo
     LandingComponent,
     LockersComponent,
     LockerEditDialog,
-    DataManagementComponent
+    DataManagementComponent,
+    ToolsComponent,
+    ToolDetailsComponent,
+    ToolEditDialogComponent
   ],
   imports: [
     HttpClientModule,
