@@ -18,10 +18,6 @@ export class ToolsService {
     public async getAllToolsAsync(): Promise<Tool[]>  {
         const list = await this.http.get<Tool[]>(environment.endpoints.tool)
             .toPromise();
-
-            list.forEach(element => {
-                console.log(element)
-            });
         return list;
     }
     

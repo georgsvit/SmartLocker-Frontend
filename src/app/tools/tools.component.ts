@@ -24,7 +24,7 @@ export class ToolsComponent implements AfterViewInit, OnInit {
   displayedColumns = ['name', 'accessLevel', 'id', 'serviceState', 'location'];
 
   ngOnInit(): void {
-    this.reloadLockers()
+    this.reloadTools()
   }
 
   constructor(
@@ -48,11 +48,7 @@ export class ToolsComponent implements AfterViewInit, OnInit {
     )
   }
 
-  private isServiceNeeded(tool: Tool): boolean {
-    return tool.serviceBook.usages >= tool.serviceBook.maxUsages || (Date.now().valueOf() - new Date(tool.serviceBook.lastServiceDate).valueOf() >= tool.serviceBook.msBetweenServices) 
-  }
-
-  private reloadLockers(): void {
+  private reloadTools(): void {
     this.toolsService.getAllToolsAsync()
       .then(list => {
         this.dataSource.data = list
@@ -64,7 +60,7 @@ export class ToolsComponent implements AfterViewInit, OnInit {
     
     dialogRef.afterClosed().subscribe(_ => {
       setTimeout(() => {
-        this.reloadLockers()
+        this.reloadTools()
       }, 200)
     })
   }
@@ -79,7 +75,7 @@ export class ToolsComponent implements AfterViewInit, OnInit {
       this.toolsService.createTool(dto)
 
       setTimeout(() => {
-        this.reloadLockers()
+        this.reloadTools()
       }, 200)
     })
   }

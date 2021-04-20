@@ -5,6 +5,7 @@ export const environment = {
   baseUrl: BASE_URL,
   endpoints: {
     login: BASE_URL + '/account/login',
+    register: BASE_URL + '/account/register',
     locker: BASE_URL + '/locker',
     blockLocker: BASE_URL + '/locker/block/{id}',
     unblockLocker: BASE_URL + '/locker/unblock/{id}',
@@ -13,5 +14,6 @@ export const environment = {
     tool: BASE_URL + '/tool',
     servicebook: BASE_URL + '/servicebook',
     service: BASE_URL + '/service',
+    user: BASE_URL + '/user',
   }
 };

@@ -18,9 +18,18 @@
     <mat-card-content class="dashboard-card-content">
         <div class="chips-container">
             <mat-chip-list>
-                <mat-chip selected color="warn" *ngIf="isServiceNeeded(tool)">
-                    Service needed
-                </mat-chip>
+                <mat-chip selected color="accent" *ngIf="tool.serviceState == 'SERVICE_REQUESTED'">
+                    Service requested
+                  </mat-chip>
+                  <mat-chip selected color="primary" *ngIf="tool.serviceState == 'IN_SERVICE'">
+                    In service
+                  </mat-chip>
+                  <mat-chip selected color="primary" *ngIf="tool.serviceState == 'SERVED'">
+                    Served
+                  </mat-chip>
+                  <mat-chip selected color="warn" *ngIf="tool.serviceState == 'SERVICE_REQUIRED'">
+                    Service required
+                  </mat-chip>
                 <mat-chip selected color="primary" *ngIf="tool.userId != null">
                     In use
                 </mat-chip>

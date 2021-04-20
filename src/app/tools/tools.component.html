@@ -45,7 +45,7 @@
       <th mat-header-cell *matHeaderCellDef>In use</th>
       <td mat-cell *matCellDef="let row">
         <mat-chip-list>
-          <mat-chip selected color="warn" *ngIf="row.userId">
+          <mat-chip selected color="accent" *ngIf="row.userId">
             ✔
           </mat-chip>
           <mat-chip selected color="primary" *ngIf="row.lockerId">

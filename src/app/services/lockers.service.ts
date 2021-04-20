@@ -16,10 +16,6 @@ export class LockersService {
     public async getAllLockersAsync(): Promise<Locker[]>  {
         const list = await this.http.get<Locker[]>(environment.endpoints.locker)
             .toPromise();
-
-            list.forEach(element => {
-                console.log(element)
-            });
         return list;
     }
 

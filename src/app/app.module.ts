@@ -39,6 +39,9 @@ import { DataManagementComponent } from './data-management/data-management.compo
 import { ToolsComponent } from './tools/tools.component';
 import { ToolDetailsComponent } from './tools/tool-details/tool-details.component';
 import { ToolEditDialogComponent } from './tools/tool-edit-dialog/tool-edit-dialog.component';
+import { UsersComponent } from './users/users.component';
+import { UserEditDialogComponent } from './users/user-edit-dialog/user-edit-dialog.component';
+import { UserDetailsDialogComponent } from './users/user-details-dialog/user-details-dialog.component';
 
 
 @NgModule({
@@ -52,7 +55,10 @@ import { ToolEditDialogComponent } from './tools/tool-edit-dialog/tool-edit-dial
     DataManagementComponent,
     ToolsComponent,
     ToolDetailsComponent,
-    ToolEditDialogComponent
+    ToolEditDialogComponent,
+    UsersComponent,
+    UserEditDialogComponent,
+    UserDetailsDialogComponent
   ],
   imports: [
     HttpClientModule,
