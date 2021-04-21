@@ -42,6 +42,7 @@ import { ToolEditDialogComponent } from './tools/tool-edit-dialog/tool-edit-dial
 import { UsersComponent } from './users/users.component';
 import { UserEditDialogComponent } from './users/user-edit-dialog/user-edit-dialog.component';
 import { UserDetailsDialogComponent } from './users/user-details-dialog/user-details-dialog.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { UserDetailsDialogComponent } from './users/user-details-dialog/user-det
     ToolEditDialogComponent,
     UsersComponent,
     UserEditDialogComponent,
-    UserDetailsDialogComponent
+    UserDetailsDialogComponent,
+    NotificationsComponent
   ],
   imports: [
     HttpClientModule,

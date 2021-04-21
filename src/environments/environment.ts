@@ -15,5 +15,6 @@ export const environment = {
     servicebook: BASE_URL + '/servicebook',
     service: BASE_URL + '/service',
     user: BASE_URL + '/user',
+    notification: BASE_URL + '/accounting/notification',
   }
 };

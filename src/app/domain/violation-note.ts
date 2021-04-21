@@ -11,5 +11,5 @@ export class ViolationNote {
 
     public user: User;
     public tool: Tool;
-    public locker: Locker;
+    public locker: Locker;    
 }

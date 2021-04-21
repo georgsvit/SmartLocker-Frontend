@@ -9,5 +9,5 @@ export class ServiceNote {
     public cost: number;
 
     public user: User;
-    public tool: Tool;
+    public tool: Tool;    
 }
