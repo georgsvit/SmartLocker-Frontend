@@ -16,5 +16,8 @@ export const environment = {
     service: BASE_URL + '/service',
     user: BASE_URL + '/user',
     notification: BASE_URL + '/accounting/notification',
+    accountingReport: BASE_URL + '/accounting/reports/accounting',
+    serviceReport: BASE_URL + '/accounting/reports/service',
+    violationReport: BASE_URL + '/accounting/reports/violation',
   }
 };

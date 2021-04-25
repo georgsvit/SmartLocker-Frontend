@@ -43,6 +43,7 @@ import { UsersComponent } from './users/users.component';
 import { UserEditDialogComponent } from './users/user-edit-dialog/user-edit-dialog.component';
 import { UserDetailsDialogComponent } from './users/user-details-dialog/user-details-dialog.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { ReportsComponent } from './reports/reports.component';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { NotificationsComponent } from './notifications/notifications.component'
     UsersComponent,
     UserEditDialogComponent,
     UserDetailsDialogComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    ReportsComponent
   ],
   imports: [
     HttpClientModule,
