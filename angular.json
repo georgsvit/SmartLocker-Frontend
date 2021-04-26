@@ -13,6 +13,13 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "en": "src/locale/messages.xlf",
+          "ua": "src/locale/messages.ua.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -34,6 +41,9 @@
             "scripts": []
           },
           "configurations": {
+            "ua": {
+              "localize": ["ua"]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -69,6 +79,9 @@
             "browserTarget": "SmartLocker-Frontend:build"
           },
           "configurations": {
+            "ua": {
+              "browserTarget": "SmartLocker-Frontend:build:ua"
+            },
             "production": {
               "browserTarget": "SmartLocker-Frontend:build:production"
             }
