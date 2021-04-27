@@ -1,5 +1,5 @@
 <div class="grid-container">
-  <h1 class="mat-h1">Lockers</h1>
+  <h1 class="mat-h1" i18n="@@lockers-title">Lockers</h1>
   <button mat-fab color="primary" (click)="openCreateDialog()">
     <mat-icon>add</mat-icon>
   </button>
@@ -14,10 +14,10 @@
               <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
-              <button mat-menu-item (click)="openEditDialog(locker)">Edit</button>
-              <button mat-menu-item (click)="deleteLocker(locker.id)">Delete</button>
-              <button *ngIf="!locker.isBlocked" mat-menu-item (click)="blockLocker(i)">Block</button>
-              <button *ngIf="locker.isBlocked" mat-menu-item (click)="unblockLocker(i)">Unblock</button>
+              <button mat-menu-item (click)="openEditDialog(locker)" i18n="@@edit-btn">Edit</button>
+              <button mat-menu-item (click)="deleteLocker(locker.id)" i18n="@@delete-btn">Delete</button>
+              <button *ngIf="!locker.isBlocked" mat-menu-item (click)="blockLocker(i)" i18n="@@block-btn">Block</button>
+              <button *ngIf="locker.isBlocked" mat-menu-item (click)="unblockLocker(i)" i18n="@@unblock-btn">Unblock</button>
             </mat-menu>
           </mat-card-title>
         </mat-card-header>
@@ -25,18 +25,18 @@
           <div class="chips-container">
             <mat-chip-list>
               <ng-container [ngSwitch]="locker.isBlocked">
-                <mat-chip selected color="warn" *ngSwitchCase="true">
+                <mat-chip selected color="warn" *ngSwitchCase="true" i18n="@@blocked-label">
                   Blocked
                 </mat-chip>
-                <mat-chip selected *ngSwitchCase="false">
+                <mat-chip selected *ngSwitchCase="false" i18n="@@not-blocked-label">
                   Not blocked
                 </mat-chip>
               </ng-container>
               <ng-container [ngSwitch]="locker.isFull">
-                <mat-chip selected *ngSwitchCase="true">
+                <mat-chip selected *ngSwitchCase="true" i18n="@@full-label">
                   Full
                 </mat-chip>
-                <mat-chip selected *ngSwitchCase="false">
+                <mat-chip selected *ngSwitchCase="false" i18n="@@not-full-label">
                   Not full
                 </mat-chip>
               </ng-container>
@@ -50,10 +50,10 @@
               [expanded]="panelExpanded[i]">
 
               <mat-expansion-panel-header>
-                <mat-panel-title>
+                <mat-panel-title i18n="@@lockers-tools-label">
                   Tools
                 </mat-panel-title>
-                <mat-panel-description>
+                <mat-panel-description i18n="@@lockers-tools-description-label">
                   Tools located in this locker
                 </mat-panel-description>              
               </mat-expansion-panel-header>

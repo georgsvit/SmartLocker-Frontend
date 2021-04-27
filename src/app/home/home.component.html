@@ -1,24 +1,24 @@
 <div class="main">
     <mat-tab-group mat-align-tabs="center" [backgroundColor]="'primary'">
-      <mat-tab label="Users">
+      <mat-tab i18n-label="@@users-label" label="Users">
         <users-comp></users-comp>
       </mat-tab>
-        <mat-tab label="Tools">
+        <mat-tab i18n-label="@@tools-label" label="Tools">
             <tools-comp></tools-comp>
         </mat-tab>        
-        <mat-tab label="Lockers">
+        <mat-tab i18n-label="@@lockers-label" label="Lockers">
           <lockers-comp></lockers-comp>
         </mat-tab>
       
       
-        <mat-tab label="DB">
+        <mat-tab i18n-label="@@data-label" label="Data Management">
             <data-management-comp></data-management-comp>
         </mat-tab>
-        <mat-tab label="Reports">
+        <mat-tab i18n-label="@@reports-label" label="Reports">
           <reports-comp></reports-comp>
         </mat-tab>
 
-        <mat-tab label="Notifications">
+        <mat-tab i18n-label="@@notifications-label" label="Notifications">
             <notifications-comp></notifications-comp>
         </mat-tab>
       </mat-tab-group>

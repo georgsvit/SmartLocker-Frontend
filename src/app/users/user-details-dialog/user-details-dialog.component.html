@@ -7,24 +7,24 @@
             <mat-icon>more_vert</mat-icon>
         </button>
         <mat-menu #menu="matMenu" xPosition="before">
-            <button mat-menu-item (click)="onEdit()">Edit</button>
-            <button *ngIf="user.accessLevel != 0" mat-menu-item (click)="onBlock()">Block</button>
-            <button mat-menu-item (click)="this.dialogRef.close()">Close</button>
+            <button mat-menu-item (click)="onEdit()" i18n="@@user-details-dialog-menu-edit">Edit</button>
+            <button *ngIf="user.accessLevel != 0" mat-menu-item (click)="onBlock()" i18n="@@user-details-dialog-menu-dialog">Block</button>
+            <button mat-menu-item (click)="this.dialogRef.close()" i18n="@@user-details-dialog-menu-close">Close</button>
         </mat-menu>
     </mat-card-header>
       
     <mat-card-content class="dashboard-card-content">
-        <h2>Details</h2>
+        <h2 i18n="@@user-details-dialog-title">Details</h2>
         <div style="text-align: left">
-            <p><span class="details">Role:</span> {{user.role}}</p>
-            <p><span class="details">Access Level:</span> {{user.accessLevel}}</p>
-            <p><span class="details">Login:</span> {{user.login}}</p>
+            <p><span class="details" i18n="@@user-details-dialog-role">Role:</span> {{user.role}}</p>
+            <p><span class="details" i18n="@@user-details-dialog-access-level">Access Level:</span> {{user.accessLevel}}</p>
+            <p><span class="details" i18n="@@user-details-dialog-login">Login:</span> {{user.login}}</p>
         </div>
 
         <ng-container *ngIf="user.tools != null && user.tools.length != 0">
             <mat-expansion-panel >
                 <mat-expansion-panel-header>
-                    <mat-panel-title>
+                    <mat-panel-title i18n="@@user-details-dialog-tools">
                         Tools
                     </mat-panel-title>
                 </mat-expansion-panel-header>
@@ -46,13 +46,13 @@
         <ng-container *ngIf="user.violationNotes != null && user.violationNotes.length != 0">
             <mat-expansion-panel >
                 <mat-expansion-panel-header>
-                    <mat-panel-title>
+                    <mat-panel-title i18n="@@user-details-dialog-violation-notes">
                         Violation notes
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <mat-list dense>
                 <mat-list-item *ngFor="let note of user.violationNotes" style="margin-bottom: 20px;">                  
-                    <p>{{note.date}} {{note.tool.name}} (#{{note.toolId}}) was taken from locker #{{note.lockerId}}</p>                  
+                    <p>{{note.date}} {{note.tool.name}} (#{{note.toolId}}) <span i18n="@@user-details-dialog-violation-notes-was-taken"> was taken from locker</span> #{{note.lockerId}}</p>                  
                   <mat-divider style="margin: -10px;"></mat-divider>
                 </mat-list-item>                
               </mat-list>              
@@ -62,14 +62,14 @@
         <ng-container *ngIf="user.serviceNotes != null &&user.serviceNotes.length != 0">
             <mat-expansion-panel >
                 <mat-expansion-panel-header>
-                    <mat-panel-title>
+                    <mat-panel-title i18n="@@user-details-dialog-service-note">
                         Service notes
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <mat-list dense>
                     <mat-list-item *ngFor="let note of user.serviceNotes" style="margin-bottom: 20px;">                  
-                        <p *ngIf="note.cost == 0">{{note.date}} {{note.tool.name}} (#{{note.toolId}}) was taken to service</p>
-                        <p *ngIf="note.cost != 0">{{note.date}} {{note.tool.name}} (#{{note.toolId}}) was maintened for {{note.cost}}</p>                  
+                        <p *ngIf="note.cost == 0">{{note.date}} {{note.tool.name}} (#{{note.toolId}}) <span i18n="@@user-details-dialog-service-note-was-taken"> was taken to service </span></p>
+                        <p *ngIf="note.cost != 0">{{note.date}} {{note.tool.name}} (#{{note.toolId}}) <span i18n="@@user-details-dialog-service-note-was-maintaned"> was maintened for </span> {{note.cost}} $</p>                  
                       <mat-divider style="margin: -10px;"></mat-divider>
                     </mat-list-item>                
                   </mat-list>              
@@ -79,14 +79,14 @@
         <ng-container *ngIf="user.accountingNotes != null &&user.accountingNotes.length != 0">
             <mat-expansion-panel >
                 <mat-expansion-panel-header>
-                    <mat-panel-title>
+                    <mat-panel-title i18n="@@user-details-dialog-accounting-notes">
                         Accounting notes
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <mat-list dense>
                     <mat-list-item *ngFor="let note of user.accountingNotes" style="margin-bottom: 20px;">                  
-                        <p *ngIf="note.isTaken">{{note.date}} {{note.tool.name}} (#{{note.toolId}}) was taken</p>
-                        <p *ngIf="!note.isTaken">{{note.date}} {{note.tool.name}} (#{{note.toolId}}) was taken and returned</p>                  
+                        <p *ngIf="note.isTaken">{{note.date}} {{note.tool.name}} (#{{note.toolId}}) <span i18n="@@user-details-dialog-accounting-notes-was-taken"> was taken</span></p>
+                        <p *ngIf="!note.isTaken">{{note.date}} {{note.tool.name}} (#{{note.toolId}}) <span i18n="@@user-details-dialog-accounting-notes-was-taken-and-returned"> was taken and returned</span></p>                  
                         <mat-divider style="margin: -10px;"></mat-divider>
                     </mat-list-item>                
                 </mat-list>

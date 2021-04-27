@@ -8,17 +8,17 @@ export interface LockerEditDialogData {
 @Component({
     selector: `locker-edit-dialog`,
     template: `
-        <h2 mat-dialog-title>Enter locker data</h2>
+        <h2 mat-dialog-title i18n="@@locker-edit-dialog-title">Enter locker data</h2>
         <div mat-dialog-content>
         <p *ngIf="error" style="color: #e43e32;">{{error}}</p>            
         <mat-form-field>
-            <mat-label>Locker's login</mat-label>
+            <mat-label i18n="@@locker-edit-dialog-login">Locker's login</mat-label>
             <input matInput [(ngModel)]="data.login">
         </mat-form-field>
         </div>
         <div mat-dialog-actions>
-            <button mat-button mat-dialog-close>Close</button>
-            <button mat-button (click)="onCreate()">Save</button>
+            <button mat-button mat-dialog-close i18n="@@locker-edit-dialog-close-btn">Close</button>
+            <button mat-button (click)="onCreate()" i18n="@@locker-edit-dialog-save-btn">Save</button>
         </div>`
 })
 export class LockerEditDialog {

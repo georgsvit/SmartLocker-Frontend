@@ -2,22 +2,9 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="log-in-btn" datatype="html">
-        <source>Log In</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="log-out-btn" datatype="html">
-        <source>Log Out</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="import-card-title" datatype="html">
         <source>Data Import</source>
+        <target>Імпортування даних</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data-management/data-management.component.html</context>
           <context context-type="linenumber">2</context>
@@ -25,6 +12,7 @@
       </trans-unit>
       <trans-unit id="import-card-text" datatype="html">
         <source>Please upload the text file with exported data</source>
+        <target>Будь ласка оберіть файл з експортованими даними</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data-management/data-management.component.html</context>
           <context context-type="linenumber">4</context>
@@ -32,6 +20,7 @@
       </trans-unit>
       <trans-unit id="selected-file" datatype="html">
         <source>Selected file:</source>
+        <target>Обраний файл:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data-management/data-management.component.html</context>
           <context context-type="linenumber">5</context>
@@ -39,6 +28,7 @@
       </trans-unit>
       <trans-unit id="select-file-btn" datatype="html">
         <source>Select File</source>
+        <target>Обрати файл</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data-management/data-management.component.html</context>
           <context context-type="linenumber">9</context>
@@ -46,6 +36,7 @@
       </trans-unit>
       <trans-unit id="upload-btn" datatype="html">
         <source>Upload</source>
+        <target>Завантажити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data-management/data-management.component.html</context>
           <context context-type="linenumber">10</context>
@@ -53,6 +44,7 @@
       </trans-unit>
       <trans-unit id="export-card-title" datatype="html">
         <source>Data Export</source>
+        <target>Експортування даних</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data-management/data-management.component.html</context>
           <context context-type="linenumber">14</context>
@@ -60,6 +52,7 @@
       </trans-unit>
       <trans-unit id="export-card-text" datatype="html">
         <source>Please click the button to download the exported data</source>
+        <target>Натисніть на кнопку щоб завантажити дані</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data-management/data-management.component.html</context>
           <context context-type="linenumber">15</context>
@@ -67,6 +60,7 @@
       </trans-unit>
       <trans-unit id="download-btn" datatype="html">
         <source>Download</source>
+        <target>Завантажити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data-management/data-management.component.html</context>
           <context context-type="linenumber">17</context>
@@ -78,6 +72,7 @@
       </trans-unit>
       <trans-unit id="backup-card-title" datatype="html">
         <source>DB Backup</source>
+        <target>Створити бекап бази даних</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data-management/data-management.component.html</context>
           <context context-type="linenumber">21</context>
@@ -85,6 +80,7 @@
       </trans-unit>
       <trans-unit id="backup-card-text" datatype="html">
         <source>Please click the button to download the database backup</source>
+        <target>Натисніть на кнопку щоб завантажити бекап бази даних</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data-management/data-management.component.html</context>
           <context context-type="linenumber">22</context>
@@ -92,6 +88,7 @@
       </trans-unit>
       <trans-unit id="users-label" datatype="html">
         <source>Users</source>
+        <target>Користувачі</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">3</context>
@@ -99,6 +96,7 @@
       </trans-unit>
       <trans-unit id="tools-label" datatype="html">
         <source>Tools</source>
+        <target>Інструменти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">6</context>
@@ -106,6 +104,7 @@
       </trans-unit>
       <trans-unit id="lockers-label" datatype="html">
         <source>Lockers</source>
+        <target>Комірки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">9</context>
@@ -113,6 +112,7 @@
       </trans-unit>
       <trans-unit id="data-label" datatype="html">
         <source>Data Management</source>
+        <target>Керування даними</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">14</context>
@@ -120,6 +120,7 @@
       </trans-unit>
       <trans-unit id="reports-label" datatype="html">
         <source>Reports</source>
+        <target>Звіти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">17</context>
@@ -127,13 +128,16 @@
       </trans-unit>
       <trans-unit id="notifications-label" datatype="html">
         <source>Notifications</source>
+        <target>Сповіщення</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
+
       <trans-unit id="landing-comp-title" datatype="html">
         <source>Landing</source>
+        <target>Початкова сторніка</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/landing.component.html</context>
           <context context-type="linenumber">1</context>
@@ -141,6 +145,7 @@
       </trans-unit>
       <trans-unit id="locker-edit-dialog-title" datatype="html">
         <source>Enter locker data</source>
+        <target>Введіть інформацію про комірку</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/locker-edit-dialog.ts</context>
           <context context-type="linenumber">11</context>
@@ -148,6 +153,7 @@
       </trans-unit>
       <trans-unit id="locker-edit-dialog-login" datatype="html">
         <source>Locker&apos;s login</source>
+        <target>Назва</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/locker-edit-dialog.ts</context>
           <context context-type="linenumber">15</context>
@@ -155,6 +161,7 @@
       </trans-unit>
       <trans-unit id="locker-edit-dialog-close-btn" datatype="html">
         <source>Close</source>
+        <target>Закрити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/locker-edit-dialog.ts</context>
           <context context-type="linenumber">20</context>
@@ -162,6 +169,7 @@
       </trans-unit>
       <trans-unit id="locker-edit-dialog-save-btn" datatype="html">
         <source>Save</source>
+        <target>Зберегти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/locker-edit-dialog.ts</context>
           <context context-type="linenumber">21</context>
@@ -169,6 +177,7 @@
       </trans-unit>
       <trans-unit id="lockers-title" datatype="html">
         <source>Lockers</source>
+        <target>Комірки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/lockers.component.html</context>
           <context context-type="linenumber">2</context>
@@ -176,6 +185,7 @@
       </trans-unit>
       <trans-unit id="edit-btn" datatype="html">
         <source>Edit</source>
+        <target>Редагувати</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/lockers.component.html</context>
           <context context-type="linenumber">17</context>
@@ -183,6 +193,7 @@
       </trans-unit>
       <trans-unit id="delete-btn" datatype="html">
         <source>Delete</source>
+        <target>Видалити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/lockers.component.html</context>
           <context context-type="linenumber">18</context>
@@ -190,6 +201,7 @@
       </trans-unit>
       <trans-unit id="block-btn" datatype="html">
         <source>Block</source>
+        <target>Блокувати</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/lockers.component.html</context>
           <context context-type="linenumber">19</context>
@@ -197,6 +209,7 @@
       </trans-unit>
       <trans-unit id="unblock-btn" datatype="html">
         <source>Unblock</source>
+        <target>Розблокувати</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/lockers.component.html</context>
           <context context-type="linenumber">20</context>
@@ -204,6 +217,7 @@
       </trans-unit>
       <trans-unit id="blocked-label" datatype="html">
         <source> Blocked </source>
+        <target>Заблоковано</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/lockers.component.html</context>
           <context context-type="linenumber">29,30</context>
@@ -211,6 +225,7 @@
       </trans-unit>
       <trans-unit id="not-blocked-label" datatype="html">
         <source> Not blocked </source>
+        <target>Немає обмежень</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/lockers.component.html</context>
           <context context-type="linenumber">32,33</context>
@@ -218,6 +233,7 @@
       </trans-unit>
       <trans-unit id="full-label" datatype="html">
         <source> Full </source>
+        <target>Повна</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/lockers.component.html</context>
           <context context-type="linenumber">37,38</context>
@@ -225,6 +241,7 @@
       </trans-unit>
       <trans-unit id="not-full-label" datatype="html">
         <source> Not full </source>
+        <target>Є вільне місце</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/lockers.component.html</context>
           <context context-type="linenumber">40,41</context>
@@ -232,6 +249,7 @@
       </trans-unit>
       <trans-unit id="lockers-tools-label" datatype="html">
         <source> Tools </source>
+        <target>Інструменти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/lockers.component.html</context>
           <context context-type="linenumber">54,55</context>
@@ -239,6 +257,7 @@
       </trans-unit>
       <trans-unit id="lockers-tools-description-label" datatype="html">
         <source> Tools located in this locker </source>
+        <target>Інструменти, які розташовані у комірці</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lockers/lockers.component.html</context>
           <context context-type="linenumber">57,58</context>
@@ -246,6 +265,7 @@
       </trans-unit>
       <trans-unit id="login-title" datatype="html">
         <source>Login</source>
+        <target>Вхід</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/login/login.component.html</context>
           <context context-type="linenumber">2</context>
@@ -253,6 +273,7 @@
       </trans-unit>
       <trans-unit id="login-label" datatype="html">
         <source>Login</source>
+        <target>Електронна адреса</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/login/login.component.html</context>
           <context context-type="linenumber">8</context>
@@ -260,6 +281,7 @@
       </trans-unit>
       <trans-unit id="password-label" datatype="html">
         <source>Password</source>
+        <target>Пароль</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/login/login.component.html</context>
           <context context-type="linenumber">12</context>
@@ -267,6 +289,7 @@
       </trans-unit>
       <trans-unit id="submit-btn" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Submit </source>
+        <target>Увійти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/login/login.component.html</context>
           <context context-type="linenumber">16,21</context>
@@ -274,6 +297,7 @@
       </trans-unit>
       <trans-unit id="notifications-comp-content-label" datatype="html">
         <source>Content</source>
+        <target>Зміст</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/notifications/notifications.component.html</context>
           <context context-type="linenumber">5</context>
@@ -281,6 +305,7 @@
       </trans-unit>
       <trans-unit id="notifications-comp-date-label" datatype="html">
         <source>Date</source>
+        <target>Дата</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/notifications/notifications.component.html</context>
           <context context-type="linenumber">10</context>
@@ -288,6 +313,7 @@
       </trans-unit>
       <trans-unit id="notifications-comp-type-label" datatype="html">
         <source>Type</source>
+        <target>Тип</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/notifications/notifications.component.html</context>
           <context context-type="linenumber">15</context>
@@ -295,6 +321,7 @@
       </trans-unit>
       <trans-unit id="notifications-comp-action-label" datatype="html">
         <source>Action</source>
+        <target>Дія</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/notifications/notifications.component.html</context>
           <context context-type="linenumber">29</context>
@@ -302,6 +329,7 @@
       </trans-unit>
       <trans-unit id="reports-comp-accounting-report-title" datatype="html">
         <source>Accounting report</source>
+        <target>Журнал обліку інструменту</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/reports/reports.component.html</context>
           <context context-type="linenumber">2</context>
@@ -309,6 +337,7 @@
       </trans-unit>
       <trans-unit id="reports-comp-accounting-report-text" datatype="html">
         <source>Please click the button to download the report</source>
+        <target>Натисніть кнопку щоб завантажити журнал обліку інструменту</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/reports/reports.component.html</context>
           <context context-type="linenumber">3</context>
@@ -316,6 +345,7 @@
       </trans-unit>
       <trans-unit id="reports-comp-accounting-report-download-btn" datatype="html">
         <source>Download</source>
+        <target>Завантажити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/reports/reports.component.html</context>
           <context context-type="linenumber">5</context>
@@ -323,6 +353,7 @@
       </trans-unit>
       <trans-unit id="reports-comp-service-report-title" datatype="html">
         <source>Service report</source>
+        <target>Журнал сервісного обслуговування</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/reports/reports.component.html</context>
           <context context-type="linenumber">9</context>
@@ -330,6 +361,7 @@
       </trans-unit>
       <trans-unit id="reports-comp-service-report-text" datatype="html">
         <source>Please click the button to download the report</source>
+        <target>Натисніть кнопку щоб завантажити журнал сервісного обслуговування</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/reports/reports.component.html</context>
           <context context-type="linenumber">10</context>
@@ -337,6 +369,7 @@
       </trans-unit>
       <trans-unit id="reports-comp-service-report-download-btn" datatype="html">
         <source>Download</source>
+        <target>Завантажити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/reports/reports.component.html</context>
           <context context-type="linenumber">12</context>
@@ -344,6 +377,7 @@
       </trans-unit>
       <trans-unit id="reports-comp-violation-report-title" datatype="html">
         <source>Violation report</source>
+        <target>Журнал порушень</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/reports/reports.component.html</context>
           <context context-type="linenumber">16</context>
@@ -351,6 +385,7 @@
       </trans-unit>
       <trans-unit id="reports-comp-violation-report-text" datatype="html">
         <source>Please click the button to download the report</source>
+        <target>Натисніть кнопку щоб завантажити журнал порушень</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/reports/reports.component.html</context>
           <context context-type="linenumber">17</context>
@@ -358,13 +393,31 @@
       </trans-unit>
       <trans-unit id="reports-comp-violation-report-download-btn" datatype="html">
         <source>Download</source>
+        <target>Завантажити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/reports/reports.component.html</context>
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="log-in-btn" datatype="html">
+        <source>Log In</source>
+        <target>Увійти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="log-out-btn" datatype="html">
+        <source>Log Out</source>
+        <target>Вийти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="tool-details-menu-request-service" datatype="html">
         <source>Request Service</source>
+        <target>Замовити сервісне обслуговування</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">10</context>
@@ -372,6 +425,7 @@
       </trans-unit>
       <trans-unit id="tool-details-menu-edit" datatype="html">
         <source>Edit</source>
+        <target>Редагувати</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">11</context>
@@ -379,6 +433,7 @@
       </trans-unit>
       <trans-unit id="tool-details-menu-delete" datatype="html">
         <source>Delete</source>
+        <target>Видалити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">12</context>
@@ -386,6 +441,7 @@
       </trans-unit>
       <trans-unit id="tool-details-menu-close" datatype="html">
         <source>Close</source>
+        <target>Закрити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">13</context>
@@ -393,6 +449,7 @@
       </trans-unit>
       <trans-unit id="tool-details-chip-service-requested" datatype="html">
         <source> Service requested </source>
+        <target>Обслуговування замовлено</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">22,23</context>
@@ -400,6 +457,7 @@
       </trans-unit>
       <trans-unit id="tool-details-chip-in-service" datatype="html">
         <source> In service </source>
+        <target>У сервісі</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">25,26</context>
@@ -407,6 +465,7 @@
       </trans-unit>
       <trans-unit id="tool-details-chip-served" datatype="html">
         <source> Served </source>
+        <target>Обслуговано</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">28,29</context>
@@ -414,6 +473,7 @@
       </trans-unit>
       <trans-unit id="tool-details-chip-service-required" datatype="html">
         <source> Service required </source>
+        <target>Обслуговування необхідне</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">31,32</context>
@@ -421,6 +481,7 @@
       </trans-unit>
       <trans-unit id="tool-details-chip-in-use" datatype="html">
         <source> In use </source>
+        <target>Використовується</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">34,35</context>
@@ -428,6 +489,7 @@
       </trans-unit>
       <trans-unit id="tool-details-chip-in-locker" datatype="html">
         <source> In locker </source>
+        <target>У комірці</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">37,38</context>
@@ -435,6 +497,7 @@
       </trans-unit>
       <trans-unit id="tool-details-panel-title" datatype="html">
         <source> Details </source>
+        <target>Детальніше</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">46,47</context>
@@ -442,6 +505,7 @@
       </trans-unit>
       <trans-unit id="tool-details-description" datatype="html">
         <source>Description:</source>
+        <target>Опис</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">50</context>
@@ -449,6 +513,7 @@
       </trans-unit>
       <trans-unit id="tool-details-access-level" datatype="html">
         <source>Access Level:</source>
+        <target>Рівень доступу</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">51</context>
@@ -456,6 +521,7 @@
       </trans-unit>
       <trans-unit id="tool-details-last-service-date" datatype="html">
         <source>Last service date:</source>
+        <target>Дата останнього обслуговування</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">53</context>
@@ -463,6 +529,7 @@
       </trans-unit>
       <trans-unit id="tool-details-service-interval" datatype="html">
         <source>Service interval:</source>
+        <target>Інтервал між обслуговуванням</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">54</context>
@@ -470,6 +537,7 @@
       </trans-unit>
       <trans-unit id="tool-details-usages" datatype="html">
         <source>Usages:</source>
+        <target>Використань:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-details/tool-details.component.html</context>
           <context context-type="linenumber">55</context>
@@ -477,6 +545,7 @@
       </trans-unit>
       <trans-unit id="tool-edit-dialog-title" datatype="html">
         <source>Enter tool data</source>
+        <target>Введіть дані про інструмент</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-edit-dialog/tool-edit-dialog.component.html</context>
           <context context-type="linenumber">1</context>
@@ -484,6 +553,7 @@
       </trans-unit>
       <trans-unit id="tool-edit-dialog-name" datatype="html">
         <source>Name</source>
+        <target>Назва</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-edit-dialog/tool-edit-dialog.component.html</context>
           <context context-type="linenumber">6</context>
@@ -491,6 +561,7 @@
       </trans-unit>
       <trans-unit id="tool-edit-dialog-description" datatype="html">
         <source>Description</source>
+        <target>Опис</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-edit-dialog/tool-edit-dialog.component.html</context>
           <context context-type="linenumber">12</context>
@@ -498,6 +569,7 @@
       </trans-unit>
       <trans-unit id="tool-edit-dialog-image-url" datatype="html">
         <source>Image url</source>
+        <target>Посилання на зображення</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-edit-dialog/tool-edit-dialog.component.html</context>
           <context context-type="linenumber">18</context>
@@ -505,6 +577,7 @@
       </trans-unit>
       <trans-unit id="tool-edit-dialog-access-level" datatype="html">
         <source>Access level</source>
+        <target>Рівень доступу</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-edit-dialog/tool-edit-dialog.component.html</context>
           <context context-type="linenumber">24</context>
@@ -512,6 +585,7 @@
       </trans-unit>
       <trans-unit id="tool-edit-dialog-last-service-date" datatype="html">
         <source>Last service date</source>
+        <target>Дата останнього обслуговування</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-edit-dialog/tool-edit-dialog.component.html</context>
           <context context-type="linenumber">30</context>
@@ -519,6 +593,7 @@
       </trans-unit>
       <trans-unit id="tool-edit-dialog-interval" datatype="html">
         <source>Interval between services (days)</source>
+        <target>Інтервал між обслуговуванням</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-edit-dialog/tool-edit-dialog.component.html</context>
           <context context-type="linenumber">36</context>
@@ -526,6 +601,7 @@
       </trans-unit>
       <trans-unit id="tool-edit-dialog-max-usages" datatype="html">
         <source>Max usages</source>
+        <target>Максимальна кількість використань</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-edit-dialog/tool-edit-dialog.component.html</context>
           <context context-type="linenumber">42</context>
@@ -533,6 +609,7 @@
       </trans-unit>
       <trans-unit id="tool-edit-dialog-current-usages" datatype="html">
         <source>Current usages</source>
+        <target>Використань</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-edit-dialog/tool-edit-dialog.component.html</context>
           <context context-type="linenumber">48</context>
@@ -540,6 +617,7 @@
       </trans-unit>
       <trans-unit id="tool-edit-dialog-close-btn" datatype="html">
         <source>Close</source>
+        <target>Закрити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-edit-dialog/tool-edit-dialog.component.html</context>
           <context context-type="linenumber">54</context>
@@ -547,6 +625,7 @@
       </trans-unit>
       <trans-unit id="tool-edit-dialog-save-btn" datatype="html">
         <source>Save</source>
+        <target>Зберегти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tool-edit-dialog/tool-edit-dialog.component.html</context>
           <context context-type="linenumber">55</context>
@@ -554,6 +633,7 @@
       </trans-unit>
       <trans-unit id="tools-comp-title" datatype="html">
         <source>Tools</source>
+        <target>Інструменти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tools.component.html</context>
           <context context-type="linenumber">1</context>
@@ -561,6 +641,7 @@
       </trans-unit>
       <trans-unit id="tools-comp-id" datatype="html">
         <source>Id</source>
+        <target>Id</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tools.component.html</context>
           <context context-type="linenumber">8</context>
@@ -568,6 +649,7 @@
       </trans-unit>
       <trans-unit id="tools-comp-name" datatype="html">
         <source>Name</source>
+        <target>Назва</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tools.component.html</context>
           <context context-type="linenumber">13</context>
@@ -575,6 +657,7 @@
       </trans-unit>
       <trans-unit id="tools-comp-access-level" datatype="html">
         <source>Access Level</source>
+        <target>Рівень доступу</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tools.component.html</context>
           <context context-type="linenumber">18</context>
@@ -582,6 +665,7 @@
       </trans-unit>
       <trans-unit id="tools-comp-service" datatype="html">
         <source>Service</source>
+        <target>Стан</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tools.component.html</context>
           <context context-type="linenumber">23</context>
@@ -589,6 +673,7 @@
       </trans-unit>
       <trans-unit id="tools-comp-chip-service-requested" datatype="html">
         <source> Service requested </source>
+        <target>Обслуговування замовлено</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tools.component.html</context>
           <context context-type="linenumber">27,28</context>
@@ -596,6 +681,7 @@
       </trans-unit>
       <trans-unit id="tools-comp-chip-in-service" datatype="html">
         <source> In service </source>
+        <target>У сервісі</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tools.component.html</context>
           <context context-type="linenumber">30,31</context>
@@ -603,6 +689,7 @@
       </trans-unit>
       <trans-unit id="tools-comp-chip-served" datatype="html">
         <source> Served </source>
+        <target>Обслуговано</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tools.component.html</context>
           <context context-type="linenumber">33,34</context>
@@ -610,6 +697,7 @@
       </trans-unit>
       <trans-unit id="tools-comp-chip-service-required" datatype="html">
         <source> Service required </source>
+        <target>Обслуговування необхідне</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tools.component.html</context>
           <context context-type="linenumber">36,37</context>
@@ -617,6 +705,7 @@
       </trans-unit>
       <trans-unit id="tools-comp-location" datatype="html">
         <source>In use</source>
+        <target>Використовується</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tools.component.html</context>
           <context context-type="linenumber">43</context>
@@ -624,6 +713,7 @@
       </trans-unit>
       <trans-unit id="tools-comp-location-no-data" datatype="html">
         <source> No Data </source>
+        <target>Немає даних</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/tools/tools.component.html</context>
           <context context-type="linenumber">53,54</context>
@@ -631,6 +721,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-menu-edit" datatype="html">
         <source>Edit</source>
+        <target>Редагувати</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">10</context>
@@ -638,6 +729,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-menu-dialog" datatype="html">
         <source>Block</source>
+        <target>Блокувати</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">11</context>
@@ -645,6 +737,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-menu-close" datatype="html">
         <source>Close</source>
+        <target>Закрити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">12</context>
@@ -652,6 +745,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-title" datatype="html">
         <source>Details</source>
+        <target>Детальніше</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">17</context>
@@ -659,6 +753,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-role" datatype="html">
         <source>Role:</source>
+        <target>Роль:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">19</context>
@@ -666,6 +761,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-access-level" datatype="html">
         <source>Access Level:</source>
+        <target>Рівень доступу:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">20</context>
@@ -673,6 +769,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-login" datatype="html">
         <source>Login:</source>
+        <target>Логін:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">21</context>
@@ -680,6 +777,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-tools" datatype="html">
         <source> Tools </source>
+        <target>Інструменти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">28,29</context>
@@ -687,6 +785,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-violation-notes" datatype="html">
         <source> Violation notes </source>
+        <target>Записи про порушення</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">50,51</context>
@@ -694,6 +793,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-violation-notes-was-taken" datatype="html">
         <source> was taken from locker</source>
+        <target> було узято з комірки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">55</context>
@@ -701,6 +801,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-service-note" datatype="html">
         <source> Service notes </source>
+        <target>Записи про обслуговування</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">66,67</context>
@@ -708,6 +809,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-service-note-was-taken" datatype="html">
         <source> was taken to service </source>
+        <target> було передано до сервісного центру</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">71</context>
@@ -715,6 +817,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-service-note-was-maintaned" datatype="html">
         <source> was maintened for </source>
+        <target> було обслуговано за </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">72</context>
@@ -722,6 +825,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-accounting-notes" datatype="html">
         <source> Accounting notes </source>
+        <target>Записи про облік</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">83,84</context>
@@ -729,6 +833,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-accounting-notes-was-taken" datatype="html">
         <source> was taken</source>
+        <target> було узято</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">88</context>
@@ -736,6 +841,7 @@
       </trans-unit>
       <trans-unit id="user-details-dialog-accounting-notes-was-taken-and-returned" datatype="html">
         <source> was taken and returned</source>
+        <target> було узято та повернено</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-details-dialog/user-details-dialog.component.html</context>
           <context context-type="linenumber">89</context>
@@ -743,6 +849,7 @@
       </trans-unit>
       <trans-unit id="user-edit-dialog-title" datatype="html">
         <source>Enter user data</source>
+        <target>Введіть дані про користувача</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-edit-dialog/user-edit-dialog.component.html</context>
           <context context-type="linenumber">1</context>
@@ -750,6 +857,7 @@
       </trans-unit>
       <trans-unit id="user-edit-dialog-name" datatype="html">
         <source>Name</source>
+        <target>Ім'я</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-edit-dialog/user-edit-dialog.component.html</context>
           <context context-type="linenumber">6</context>
@@ -757,6 +865,7 @@
       </trans-unit>
       <trans-unit id="user-edit-dialog-surname" datatype="html">
         <source>Surname</source>
+        <target>Прізвище</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-edit-dialog/user-edit-dialog.component.html</context>
           <context context-type="linenumber">12</context>
@@ -764,6 +873,7 @@
       </trans-unit>
       <trans-unit id="user-edit-dialog-login" datatype="html">
         <source>Login</source>
+        <target>Логін</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-edit-dialog/user-edit-dialog.component.html</context>
           <context context-type="linenumber">18</context>
@@ -771,6 +881,7 @@
       </trans-unit>
       <trans-unit id="user-edit-dialog-access-level" datatype="html">
         <source>Access level</source>
+        <target>Рівень доступу</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-edit-dialog/user-edit-dialog.component.html</context>
           <context context-type="linenumber">24</context>
@@ -778,6 +889,7 @@
       </trans-unit>
       <trans-unit id="user-edit-dialog-role" datatype="html">
         <source>Role</source>
+        <target>Роль</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-edit-dialog/user-edit-dialog.component.html</context>
           <context context-type="linenumber">30</context>
@@ -785,6 +897,7 @@
       </trans-unit>
       <trans-unit id="user-edit-dialog-admin" datatype="html">
         <source>Admin</source>
+        <target>Адміністратор</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-edit-dialog/user-edit-dialog.component.html</context>
           <context context-type="linenumber">32</context>
@@ -792,6 +905,7 @@
       </trans-unit>
       <trans-unit id="user-edit-dialog-employee" datatype="html">
         <source>Employee</source>
+        <target>Робітник</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-edit-dialog/user-edit-dialog.component.html</context>
           <context context-type="linenumber">33</context>
@@ -799,6 +913,7 @@
       </trans-unit>
       <trans-unit id="user-edit-dialog-serviceman" datatype="html">
         <source>Serviceman</source>
+        <target>Майстер</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-edit-dialog/user-edit-dialog.component.html</context>
           <context context-type="linenumber">34</context>
@@ -806,6 +921,7 @@
       </trans-unit>
       <trans-unit id="user-edit-dialog-password" datatype="html">
         <source>Password</source>
+        <target>Пароль</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-edit-dialog/user-edit-dialog.component.html</context>
           <context context-type="linenumber">40</context>
@@ -813,6 +929,7 @@
       </trans-unit>
       <trans-unit id="user-edit-dialog-menu-close" datatype="html">
         <source>Close</source>
+        <target>Закрити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-edit-dialog/user-edit-dialog.component.html</context>
           <context context-type="linenumber">46</context>
@@ -820,6 +937,7 @@
       </trans-unit>
       <trans-unit id="user-edit-dialog-menu-save" datatype="html">
         <source>Save</source>
+        <target>Зберегти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user-edit-dialog/user-edit-dialog.component.html</context>
           <context context-type="linenumber">47</context>
@@ -827,6 +945,7 @@
       </trans-unit>
       <trans-unit id="users-comp-title" datatype="html">
         <source>Users</source>
+        <target>Користувачі</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/users.component.html</context>
           <context context-type="linenumber">1</context>
@@ -834,6 +953,7 @@
       </trans-unit>
       <trans-unit id="users-comp-id" datatype="html">
         <source>Id</source>
+        <target>Id</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/users.component.html</context>
           <context context-type="linenumber">9</context>
@@ -841,6 +961,7 @@
       </trans-unit>
       <trans-unit id="users-comp-login" datatype="html">
         <source>Login</source>
+        <target>Логін</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/users.component.html</context>
           <context context-type="linenumber">14</context>
@@ -848,6 +969,7 @@
       </trans-unit>
       <trans-unit id="users-comp-name" datatype="html">
         <source>Name</source>
+        <target>Ім'я</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/users.component.html</context>
           <context context-type="linenumber">19</context>
@@ -855,6 +977,7 @@
       </trans-unit>
       <trans-unit id="users-comp-surname" datatype="html">
         <source>Surname</source>
+        <target>Прізвище</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/users.component.html</context>
           <context context-type="linenumber">24</context>
@@ -862,6 +985,7 @@
       </trans-unit>
       <trans-unit id="users-comp-role" datatype="html">
         <source>Role</source>
+        <target>Роль</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/users.component.html</context>
           <context context-type="linenumber">29</context>
@@ -869,6 +993,7 @@
       </trans-unit>
       <trans-unit id="users-comp-access-level" datatype="html">
         <source>Access level</source>
+        <target>Рівень доступу</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/users.component.html</context>
           <context context-type="linenumber">34</context>
@@ -876,6 +1001,7 @@
       </trans-unit>
       <trans-unit id="users-comp-tools" datatype="html">
         <source>Tools</source>
+        <target>Інструменти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/users.component.html</context>
           <context context-type="linenumber">39</context>

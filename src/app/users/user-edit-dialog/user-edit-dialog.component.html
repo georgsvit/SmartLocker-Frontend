@@ -1,48 +1,48 @@
-<h2 mat-dialog-title>Enter user data</h2>
+<h2 mat-dialog-title i18n="@@user-edit-dialog-title">Enter user data</h2>
 <div mat-dialog-content>
     <p *ngIf="error" style="color: #e43e32;">{{error}}</p>   
     <p>
         <mat-form-field>
-            <mat-label>Name</mat-label>
+            <mat-label i18n="@@user-edit-dialog-name">Name</mat-label>
             <input matInput [(ngModel)]="data.firstName" required>
         </mat-form-field>
     </p>         
     <p>
         <mat-form-field>
-            <mat-label>Surname</mat-label>
+            <mat-label i18n="@@user-edit-dialog-surname">Surname</mat-label>
             <input matInput [(ngModel)]="data.lastName" required>
         </mat-form-field>
     </p>
     <p>
         <mat-form-field>
-            <mat-label>Login</mat-label>
+            <mat-label i18n="@@user-edit-dialog-login">Login</mat-label>
             <input matInput [(ngModel)]="data.login" required>
         </mat-form-field>    
     </p>
     <p>
         <mat-form-field>
-            <mat-label>Access level</mat-label>
+            <mat-label i18n="@@user-edit-dialog-access-level">Access level</mat-label>
             <input matInput [(ngModel)]="data.accessLevel" type="number" min="0" max="4" required>
         </mat-form-field>
     </p>
     <p>
         <mat-form-field>
-            <mat-label>Role</mat-label>
+            <mat-label i18n="@@user-edit-dialog-role">Role</mat-label>
             <select matNativeControl [(ngModel)]="data.role" required>
-                <option value="ADMIN">Admin</option>
-                <option value="EMPLOYEE">Employee</option>
-                <option value="SERVICEMAN">Serviceman</option>
+                <option value="ADMIN" i18n="@@user-edit-dialog-admin">Admin</option>
+                <option value="EMPLOYEE" i18n="@@user-edit-dialog-employee">Employee</option>
+                <option value="SERVICEMAN" i18n="@@user-edit-dialog-serviceman">Serviceman</option>
               </select>
         </mat-form-field>
     </p>
     <p>        
         <mat-form-field>
-            <mat-label>Password</mat-label>
+            <mat-label i18n="@@user-edit-dialog-password">Password</mat-label>
             <input matInput [(ngModel)]="data.password" type="password">
         </mat-form-field>
     </p>
 </div>
 <div mat-dialog-actions>
-    <button mat-button mat-dialog-close>Close</button>
-    <button mat-button (click)="onCreate()">Save</button>
+    <button mat-button mat-dialog-close i18n="@@user-edit-dialog-menu-close">Close</button>
+    <button mat-button (click)="onCreate()" i18n="@@user-edit-dialog-menu-save">Save</button>
 </div>
