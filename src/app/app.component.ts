@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Token } from './domain/token';
+import { LanguageSelectorService } from './services/language-selector-service';
 import { UserManagerService } from './services/user-manager.service';
 
 @Component({
@@ -16,6 +17,7 @@ export class AppComponent implements OnInit {
 
   constructor(
     private userManagerService: UserManagerService,
+    private languageService: LanguageSelectorService,
     private router: Router
   ) { }
 
@@ -33,5 +35,9 @@ export class AppComponent implements OnInit {
   public async logOutAsync(): Promise<void> {
     this.userManagerService.removeToken();
     await this.router.navigate(['/**']);
+  }
+
+  public onLanguageChange(language: string): void {
+    this.languageService.setLanguage(language)
   }
 }

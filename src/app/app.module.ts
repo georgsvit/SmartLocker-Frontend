@@ -44,6 +44,7 @@ import { UserEditDialogComponent } from './users/user-edit-dialog/user-edit-dial
 import { UserDetailsDialogComponent } from './users/user-details-dialog/user-details-dialog.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { ReportsComponent } from './reports/reports.component';
+import { LanguageInterceptor } from './services/interceptors/language.interceptor';
 
 
 @NgModule({
@@ -91,7 +92,8 @@ import { ReportsComponent } from './reports/reports.component';
     MatSnackBarModule
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: LanguageInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]
 })
