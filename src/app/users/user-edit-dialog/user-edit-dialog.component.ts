@@ -1,6 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { User } from 'src/app/domain/user';
+import { LanguageSelectorService } from 'src/app/services/language-selector-service';
 
 @Component({
   selector: 'user-edit-dialog-comp',
@@ -13,7 +14,8 @@ export class UserEditDialogComponent {
 
   constructor(
     public dialogRef: MatDialogRef<UserEditDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: User
+    @Inject(MAT_DIALOG_DATA) public data: User,    
+    private languageService: LanguageSelectorService
   ) {
     if (this.data == null) {
       this.data = new User("", "", "", 0, "", "")
@@ -27,7 +29,11 @@ export class UserEditDialogComponent {
       }
         this.dialogRef.close(this.data)
     } else {
+      if (this.languageService.getLanguage() == "ua") {          
+        this.error = "Некоректні дані"
+      } else {          
         this.error = "Invalid input"
+      }      
     }        
   }
 }

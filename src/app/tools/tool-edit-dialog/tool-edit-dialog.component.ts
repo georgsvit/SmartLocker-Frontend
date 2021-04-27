@@ -2,6 +2,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Tool } from 'src/app/domain/tool';
 import { ToolDTO } from 'src/app/dto/tool-dto';
+import { LanguageSelectorService } from 'src/app/services/language-selector-service';
 
 @Component({
   selector: 'tool-edit-dialog-comp',
@@ -14,7 +15,8 @@ export class ToolEditDialogComponent {
 
   constructor(
     public dialogRef: MatDialogRef<ToolEditDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: Tool
+    @Inject(MAT_DIALOG_DATA) public data: Tool,
+    private languageService: LanguageSelectorService
   ) {
     if (this.data == null) {
       this.data = new Tool("", "", "", "", 0, "", "", "")
@@ -29,7 +31,11 @@ export class ToolEditDialogComponent {
     if (this.data.name != "") {
         this.dialogRef.close(new ToolDTO(this.data))
     } else {
+      if (this.languageService.getLanguage() == "ua") {          
+        this.error = "Некоректні дані"
+      } else {          
         this.error = "Invalid input"
+      }      
     }        
   }
 }

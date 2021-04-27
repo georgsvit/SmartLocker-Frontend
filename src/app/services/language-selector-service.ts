@@ -2,21 +2,29 @@ import { Injectable } from "@angular/core";
 import { environment } from "src/environments/environment";
 
 const CHOSEN_LANGUAGE = 'language';
-const DEFAULT_LANGUAGE = 'ua';
+const DEFAULT_LANGUAGE = 'en';
 
 @Injectable({
     providedIn: "root"
 })
 export class LanguageSelectorService {
-    constructor() {}
+    constructor() {
+
+    }
 
     public getLanguage(): string {
-        const language = localStorage[CHOSEN_LANGUAGE]
+        // const language = localStorage[CHOSEN_LANGUAGE]
 
-        if (language) {
-            return language
+        // if (language) {
+        //     return language
+        // }
+        // return DEFAULT_LANGUAGE
+
+        if (window.location.href.indexOf("4201") != -1) {
+            return "ua"
+        } else {
+            return "en"
         }
-        return DEFAULT_LANGUAGE
     }
 
     public setLanguage(language: string): void {
@@ -24,9 +32,9 @@ export class LanguageSelectorService {
         const a = document.createElement("a")
 
         if (language == "ua") {
-            a.href = environment.ua_version
+            a.href = window.location.href.replace("4202", "4201")
         } else {
-            a.href = environment.en_version
+            a.href = window.location.href.replace("4201", "4202")
         }
 
         document.body.appendChild(a)

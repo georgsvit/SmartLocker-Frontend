@@ -30,8 +30,7 @@ export class LoginComponent implements OnInit {
     
         let res = await this.authService.loginAsync(credentials);
         
-        if (!res) {
-            console.log("Success")            
+        if (!res) {        
             this.router.navigate(['/home'])
             return;
         }
