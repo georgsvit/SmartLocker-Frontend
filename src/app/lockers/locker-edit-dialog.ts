@@ -1,5 +1,6 @@
 import { Component, Inject } from "@angular/core";
 import { MatDialogRef, MAT_DIALOG_DATA } from "@angular/material/dialog";
+import { LanguageSelectorService } from "../services/language-selector-service";
 
 export interface LockerEditDialogData {
     login: string
@@ -27,14 +28,19 @@ export class LockerEditDialog {
 
     constructor(
         public dialogRef: MatDialogRef<LockerEditDialog>,
-        @Inject(MAT_DIALOG_DATA) public data: LockerEditDialogData
+        @Inject(MAT_DIALOG_DATA) public data: LockerEditDialogData,
+        private languageService: LanguageSelectorService
     ) {}
 
     public onCreate(): void {
         if (this.data.login != "") {
             this.dialogRef.close(this.data.login)
         } else {
-            this.error = "Invalid input"
+            if (this.languageService.getLanguage() == "ua") {          
+                this.error = "Некоректні дані"
+            } else {                
+                this.error = "Invalid input"
+            }
         }        
     }
 }

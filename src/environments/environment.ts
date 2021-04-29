@@ -19,5 +19,7 @@ export const environment = {
     accountingReport: BASE_URL + '/accounting/reports/accounting',
     serviceReport: BASE_URL + '/accounting/reports/service',
     violationReport: BASE_URL + '/accounting/reports/violation',
-  }
+  },
+  ua_version: 'http://localhost:4201',
+  en_version: 'http://localhost:4202',
 };

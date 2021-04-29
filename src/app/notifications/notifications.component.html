@@ -15,10 +15,10 @@
       <th mat-header-cell *matHeaderCellDef mat-sort-header i18n="@@notifications-comp-type-label">Type</th>
       <td mat-cell *matCellDef="let row">
         <mat-chip-list>
-          <mat-chip selected color="primary" *ngIf="row.type == 'Service'">
+          <mat-chip selected color="primary" *ngIf="row.type == 'Service' || row.type == 'Сервіс'">
             {{row.type}}
           </mat-chip>
-          <mat-chip selected color="primary" *ngIf="row.type == 'Violation'">
+          <mat-chip selected color="primary" *ngIf="row.type == 'Violation' || row.type == 'Порушення'">
             {{row.type}}
           </mat-chip>
         </mat-chip-list>

@@ -4,6 +4,7 @@ import { LockersService } from '../services/lockers.service';
 import { MatDialog } from "@angular/material/dialog";
 import { LockerEditDialog } from './locker-edit-dialog';
 import { NotificationService } from '../services/notification.service';
+import { LanguageSelectorService } from '../services/language-selector-service';
 
 @Component({
   selector: 'lockers-comp',
@@ -18,7 +19,8 @@ export class LockersComponent implements OnInit {
   constructor(
     private lockersService: LockersService,
     private notificationService: NotificationService,
-    public editDialog: MatDialog
+    public editDialog: MatDialog,
+    private languageService: LanguageSelectorService
   ) {}
 
   ngOnInit(): void {
@@ -60,7 +62,11 @@ export class LockersComponent implements OnInit {
     const locker = this.lockers.find(l => l.id == id)
     console.log(locker)
     if (locker.tools.length > 0) {
-      this.notificationService.displayMessage("Locker can`t be removed")
+      if (this.languageService.getLanguage() == "ua") {      
+        this.notificationService.displayMessage("Дані не можуть бути видалені")
+      } else {          
+        this.notificationService.displayMessage("Locker can`t be removed")
+      }      
       return
     }
     await this.lockersService.deleteLocker(id)
