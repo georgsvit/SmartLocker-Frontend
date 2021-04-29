@@ -1,0 +1,60 @@
+<mat-card class="dashboard-card">
+    <mat-card-header>
+        <mat-card-title style="text-align: left; padding-top: 10px;">{{tool.name}}</mat-card-title>
+        <mat-card-subtitle>{{tool.id}}</mat-card-subtitle>
+
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+            <button *ngIf="tool.serviceState == 'SERVICE_REQUIRED'" mat-menu-item (click)="requestService()" i18n="@@tool-details-menu-request-service">Request Service</button>
+            <button mat-menu-item (click)="onEdit()" i18n="@@tool-details-menu-edit">Edit</button>
+            <button mat-menu-item (click)="onDelete()" i18n="@@tool-details-menu-delete">Delete</button>
+            <button mat-menu-item (click)="this.dialogRef.close()" i18n="@@tool-details-menu-close">Close</button>
+        </mat-menu>
+    </mat-card-header>
+  
+    <div style="width: inherit; height: 300px; background-image: url({{tool.imgUrl}}); background-size: cover;"></div>
+    <mat-card-content class="dashboard-card-content">
+        <div class="chips-container">
+            <mat-chip-list>
+                <mat-chip selected color="accent" *ngIf="tool.serviceState == 'SERVICE_REQUESTED'" i18n="@@tool-details-chip-service-requested">
+                    Service requested
+                  </mat-chip>
+                  <mat-chip selected color="primary" *ngIf="tool.serviceState == 'IN_SERVICE'" i18n="@@tool-details-chip-in-service">
+                    In service
+                  </mat-chip>
+                  <mat-chip selected color="primary" *ngIf="tool.serviceState == 'SERVED'" i18n="@@tool-details-chip-served">
+                    Served
+                  </mat-chip>
+                  <mat-chip selected color="warn" *ngIf="tool.serviceState == 'SERVICE_REQUIRED'" i18n="@@tool-details-chip-service-required">
+                    Service required
+                  </mat-chip>
+                <mat-chip selected color="primary" *ngIf="tool.userId != null" i18n="@@tool-details-chip-in-use">
+                    In use
+                </mat-chip>
+                <mat-chip selected color="primary" *ngIf="tool.lockerId != null" i18n="@@tool-details-chip-in-locker">
+                    In locker
+                </mat-chip>
+            </mat-chip-list>
+        </div>
+
+        <ng-container>
+            <mat-expansion-panel >
+                <mat-expansion-panel-header>
+                    <mat-panel-title i18n="@@tool-details-panel-title">
+                    Details
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div style="text-align: left">
+                    <p><span class="details" i18n="@@tool-details-description">Description:</span> {{tool.description}}</p>
+                    <p><span class="details" i18n="@@tool-details-access-level">Access Level:</span> {{tool.accessLevel}}</p>
+                    <hr />
+                    <p><span class="details" i18n="@@tool-details-last-service-date">Last service date:</span> {{tool.serviceBook.lastServiceDate}}</p>
+                    <p><span class="details" i18n="@@tool-details-service-interval">Service interval:</span> {{tool.serviceBook.msBetweenServices / 86400}} day(s)</p>
+                    <p><span class="details" i18n="@@tool-details-usages">Usages:</span> {{tool.serviceBook.usages}}/{{tool.serviceBook.maxUsages}}</p>
+                </div>
+            </mat-expansion-panel>
+        </ng-container>
+    </mat-card-content>
+</mat-card>

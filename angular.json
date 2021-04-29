@@ -13,6 +13,13 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "en": "src/locale/messages.xlf",
+          "ua": "src/locale/messages.ua.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -28,11 +35,15 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
           },
           "configurations": {
+            "ua": {
+              "localize": ["ua"]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -68,6 +79,9 @@
             "browserTarget": "SmartLocker-Frontend:build"
           },
           "configurations": {
+            "ua": {
+              "browserTarget": "SmartLocker-Frontend:build:ua"
+            },
             "production": {
               "browserTarget": "SmartLocker-Frontend:build:production"
             }
@@ -91,6 +105,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []

@@ -1,0 +1,56 @@
+<h2 mat-dialog-title i18n="@@tool-edit-dialog-title">Enter tool data</h2>
+<div mat-dialog-content>
+    <p *ngIf="error" style="color: #e43e32;">{{error}}</p>   
+    <p>
+        <mat-form-field>
+            <mat-label i18n="@@tool-edit-dialog-name">Name</mat-label>
+            <input matInput [(ngModel)]="data.name" required>
+        </mat-form-field>
+    </p>         
+    <p>
+        <mat-form-field>
+            <mat-label i18n="@@tool-edit-dialog-description">Description</mat-label>
+            <input matInput [(ngModel)]="data.description" type="text" required>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <mat-label i18n="@@tool-edit-dialog-image-url">Image url</mat-label>
+            <input matInput [(ngModel)]="data.imgUrl" type="text" required>
+        </mat-form-field>    
+    </p>
+    <p>
+        <mat-form-field>
+            <mat-label i18n="@@tool-edit-dialog-access-level">Access level</mat-label>
+            <input matInput [(ngModel)]="data.accessLevel" type="number" min="0" max="4" required>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <mat-label i18n="@@tool-edit-dialog-last-service-date">Last service date</mat-label>
+            <input matInput [(ngModel)]="data.serviceBook.lastServiceDate" type="date" required>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <mat-label i18n="@@tool-edit-dialog-interval">Interval between services (days)</mat-label>
+            <input matInput [(ngModel)]="data.serviceBook.msBetweenServices" type="number" required>
+        </mat-form-field>
+    </p>
+    <p>        
+        <mat-form-field>
+            <mat-label i18n="@@tool-edit-dialog-max-usages">Max usages</mat-label>
+            <input matInput [(ngModel)]="data.serviceBook.maxUsages" type="number" required>
+        </mat-form-field>
+    </p>
+    <p>        
+        <mat-form-field>
+            <mat-label i18n="@@tool-edit-dialog-current-usages">Current usages</mat-label>
+            <input matInput [(ngModel)]="data.serviceBook.usages" type="number" required>
+        </mat-form-field>
+    </p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close i18n="@@tool-edit-dialog-close-btn">Close</button>
+    <button mat-button (click)="onCreate()" i18n="@@tool-edit-dialog-save-btn">Save</button>
+</div>

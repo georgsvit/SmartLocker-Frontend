@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-title i18n="@@import-card-title">Data Import</mat-card-title>
+    <mat-card-content>
+        <p i18n="@@import-card-text">Please upload the text file with exported data</p>
+        <p *ngIf="file"><span i18n="@@selected-file">Selected file:</span><span> {{file.name}}</span></p>
+    </mat-card-content>
+    <mat-card-actions>
+        <input #fileLoader type="file" accept="text/plain" hidden (change)="onFileSelect($event)"/>
+        <button mat-stroked-button color="primary" (click)="fileLoader.click()" i18n="@@select-file-btn">Select File</button>
+        <button mat-stroked-button color="primary" [disabled]="file == null ? true : null" (click)="onLoadAsync()" i18n="@@upload-btn">Upload</button>
+    </mat-card-actions>
+</mat-card>
+<mat-card>
+    <mat-card-title i18n="@@export-card-title">Data Export</mat-card-title>
+    <mat-card-content i18n="@@export-card-text">Please click the button to download the exported data</mat-card-content>
+    <mat-card-actions>
+        <button mat-stroked-button color="primary" (click)="onExport()" i18n="@@download-btn">Download</button>
+    </mat-card-actions>
+</mat-card>
+<mat-card>
+    <mat-card-title i18n="@@backup-card-title">DB Backup</mat-card-title>
+    <mat-card-content i18n="@@backup-card-text">Please click the button to download the database backup</mat-card-content>
+    <mat-card-actions>
+        <button mat-stroked-button color="primary" (click)="onBackup()" i18n="@@download-btn">Download</button>
+    </mat-card-actions>
+</mat-card>

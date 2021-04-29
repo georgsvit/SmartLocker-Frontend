@@ -1,0 +1,71 @@
+<h1 class="mat-h1" i18n="@@tools-comp-title">Tools</h1>
+<button mat-fab color="primary" (click)="openCreateDialog()">
+  <mat-icon>add</mat-icon>
+</button>
+<div class="mat-elevation-z8" style="margin: 20px;">
+  <table mat-table class="full-width-table" matSort aria-label="Elements">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header i18n="@@tools-comp-id">Id</th>
+      <td mat-cell *matCellDef="let row">{{row.id}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header i18n="@@tools-comp-name">Name</th>
+      <td mat-cell *matCellDef="let row">{{row.name}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="accessLevel">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header i18n="@@tools-comp-access-level">Access Level</th>
+      <td mat-cell *matCellDef="let row">{{row.accessLevel}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="serviceState">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header i18n="@@tools-comp-service">Service</th>
+      <td mat-cell *matCellDef="let row">
+        <mat-chip-list>
+          <mat-chip selected color="accent" *ngIf="row.serviceState == 'SERVICE_REQUESTED'" i18n="@@tools-comp-chip-service-requested">
+            Service requested
+          </mat-chip>
+          <mat-chip selected color="primary" *ngIf="row.serviceState == 'IN_SERVICE'" i18n="@@tools-comp-chip-in-service">
+            In service
+          </mat-chip>
+          <mat-chip selected color="primary" *ngIf="row.serviceState == 'SERVED'" i18n="@@tools-comp-chip-served">
+            Served
+          </mat-chip>
+          <mat-chip selected color="warn" *ngIf="row.serviceState == 'SERVICE_REQUIRED'" i18n="@@tools-comp-chip-service-required">
+            Service required
+          </mat-chip>
+        </mat-chip-list>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="location">
+      <th mat-header-cell *matHeaderCellDef i18n="@@tools-comp-location">In use</th>
+      <td mat-cell *matCellDef="let row">
+        <mat-chip-list>
+          <mat-chip selected color="accent" *ngIf="row.userId">
+            ✔
+          </mat-chip>
+          <mat-chip selected color="primary" *ngIf="row.lockerId">
+            ❌
+          </mat-chip>
+          <mat-chip selected color="primary" *ngIf="!row.lockerId && !row.userId" i18n="@@tools-comp-location-no-data">
+            No Data
+          </mat-chip>
+        </mat-chip-list>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="openDetailsDialog(row)"></tr>
+  </table>
+
+  <mat-paginator #paginator
+      [length]="dataSource?.data?.length"
+      [pageIndex]="0"
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 20]">
+  </mat-paginator>
+</div>
+
+<router-outlet></router-outlet>
